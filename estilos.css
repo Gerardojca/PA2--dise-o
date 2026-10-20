@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3b2118;
+    background: #fff8f0;
+    line-height: 1.6;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: #3b2118;
+    color: #fff8f0;
+    box-shadow: 0 2px 8px #0003;
+}
+
+.barra {
+    max-width: 1100px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 8px 5px;
+}
+
+nav a:hover,
+nav a.activo {
+    color: #e9b36b;
+}
+
+main {
+    padding-top: 78px;
+}
+
+.portada {
+    min-height: 850px;
+    padding: 130px 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(#1b0d09a8, #1b0d09a8), url('img/inicio_fondo.jpg') center/cover no-repeat;
+}
+
+.portada-contenido {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+.portada h1 {
+    font-size: 70px;
+    margin-bottom: 12px;
+}
+
+.portada p {
+    font-size: 25px;
+}
+
+.boton {
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    background: #d99a51;
+    color: #30180f;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background: #f0c58e;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: auto;
+    padding: 45px 20px;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5b3020;
+    font-size: 32px;
+}
+
+
+.dos-columnas {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.dos-columnas > * {
+    flex: 1 280px;
+}
+
+.imagen-articulo {
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.creador {
+    position: relative;
+    text-align: center;
+    margin-top: 45px;
+    padding: 25px;
+    background: #f5e5d3;
+    border-radius: 15px;
+}
+
+.creador img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+}
+
+.tarjeta {
+    position: relative;
+    flex: 1 1 220px;
+    max-width: 340px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px #3b21181c;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta img:hover {
+    transform: scale(1.06);
+    filter: brightness(.85) saturate(1.2);
+}
+
+.tarjeta h3,
+.tarjeta p {
+    padding: 10px 15px 0;
+}
+
+.tarjeta p {
+    padding-bottom: 18px;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.video-card {
+    position: relative;
+    flex: 1 1 360px;
+    max-width: 520px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px #3b21181c;
+}
+
+.video-card iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: 0;
+    border-radius: 8px;
+}
+
+.video-card img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+footer {
+    background: #3b2118;
+    color: #fff8f0;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.redes {
+    margin-top: 10px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.redes ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.redes li {
+    padding: 32px;
+}
+
+.redes a {
+    color: #e9b36b;
+}
+
+.mp3 {
+    display: none;
+}
